@@ -59,7 +59,7 @@ final class InnerDateBoundary
         }
         $val = $tmp;
     }
-
+    
     private function getUnique()
     {
         $saver = [];
@@ -82,6 +82,9 @@ final class InnerDateBoundary
         
     }
 
+    /**
+     * @return array
+     */
     public function getResult()
     {
         return $this->result;
@@ -94,6 +97,7 @@ final class InnerDateBoundary
     {
         $this->explodeDate();
         $this->getUnique();
+        return true;
     }
 
     /**
